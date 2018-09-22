@@ -1,0 +1,22 @@
+body {
+    background-color: darkgray;
+}
+
+.defaultPage {
+    background-color: black;
+    height: 100%;
+
+}
+
+img {
+    width:30%;
+    height: 30%;
+}
+
+.car {
+    display: inline-flex;
+}
+
+.carInfo {
+    margin: 10px;
+}
