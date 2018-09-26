@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 
 import CarList from './components/CarsList';
 import DefaultPage from './pages/index';
+import Search from './components/Search/Search';
 
 import data from './data.js';
 
@@ -32,15 +34,15 @@ class App extends Component {
   }
 
   render() {
-    console.log(data)
     return (
-      <div className="App">
-        <p>Welcom to my autoFind</p>
-        <DefaultPage />
-        {/* <div className="carList">
-          <CarList data={data}/>
-        </div>   */}
-      </div>
+      <Router>
+        <div className="App">
+          <p>Welcom to my autoFind</p>
+          <Route exact path="/" component={DefaultPage} />
+          <Route path = "/know" component={Search} />
+          <Route path = "/dontknow" component={Search} />
+        </div>
+      </Router>
     );
   }
 }

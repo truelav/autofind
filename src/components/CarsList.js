@@ -6,7 +6,7 @@ export default class CarsList extends Component {
     const car= this.props.data
     return (
       <div className="listings">
-        {   this.props.data.listings.map(car => (
+        {   this.props.data.map(car => (
              <Car car={car} key={car.id}/>
              ))
          }    
