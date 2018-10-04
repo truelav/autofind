@@ -8,19 +8,33 @@ body {
 
 }
 
-img {
-    width:30%;
-    height: 30%;
-}
-
-.car {
-    display: inline-flex;
-}
-
-.carInfo {
-    margin: 10px;
-}
-
 .arrows{
     display: flex;
+}
+
+#individualCar {
+    display: block
+}
+
+#carImage {
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+}
+
+.car-images {
+    display: inline-flex
+}
+
+.car-carousel-images {
+    display: inline-flex
+}
+
+.car-info {
+    border: solid black 3px
+}
+
+.car-image-thumbnail {
+    display: inline-flex;
 }
